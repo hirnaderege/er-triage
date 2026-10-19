@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cag0bdh23fpsi"]
 
+[ext_resource type="Script" uid="uid://lcd0y2p87k5g" path="res://patient.gd" id="1_ig7tw"]
+
 [node name="Main" type="Node2D" unique_id=831671509]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=57490153]
@@ -8,3 +10,12 @@ offset_top = 200.0
 offset_right = 400.0
 offset_bottom = 300.0
 color = Color(0.8757556, 0.57891774, 0.2879981, 1)
+script = ExtResource("1_ig7tw")
+
+[node name="ProgressBar" type="ProgressBar" parent="ColorRect" unique_id=135765113]
+layout_mode = 0
+offset_top = -30.0
+offset_right = 100.0
+offset_bottom = -3.0
+value = 100.0
+show_percentage = false

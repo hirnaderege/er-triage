@@ -1,5 +1,6 @@
 extends ColorRect
 
+si
 var health: float = 100.0
 var drainRate: float = 10.0 # health lost per second
 

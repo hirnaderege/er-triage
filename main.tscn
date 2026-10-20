@@ -4,7 +4,7 @@
 
 [node name="Main" type="Node2D" unique_id=831671509]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=57490153]
+[node name="Patient" type="ColorRect" parent="." unique_id=57490153]
 offset_left = 300.0
 offset_top = 200.0
 offset_right = 400.0
@@ -12,10 +12,19 @@ offset_bottom = 300.0
 color = Color(0.8757556, 0.57891774, 0.2879981, 1)
 script = ExtResource("1_ig7tw")
 
-[node name="ProgressBar" type="ProgressBar" parent="ColorRect" unique_id=135765113]
+[node name="ProgressBar" type="ProgressBar" parent="Patient" unique_id=135765113]
 layout_mode = 0
 offset_top = -30.0
 offset_right = 100.0
 offset_bottom = -3.0
+mouse_filter = 2
 value = 100.0
 show_percentage = false
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1970540436]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 81.0
+offset_bottom = 69.0
+text = "Score: 0
+"
